@@ -34,10 +34,10 @@ domicolor = 'domicolor.cli:main'
 
 
 [tool.poetry.dependencies]
-python = "<3.11,>=3.7"
+python = "<3.11,>=3.8"
 
 click = "^8.0.3"
-numpy = "^1.21.0"
+numpy = "^1.22.0"
 
 
 [tool.poetry.dev-dependencies]
