@@ -18,10 +18,8 @@ classifiers=[
     
     "Natural Language :: English",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
 ]
 
 
@@ -35,9 +33,10 @@ domicolor = 'domicolor.cli:main'
 
 
 [tool.poetry.dependencies]
-python = "<3.11,>=3.7"
+python = "<3.10,>=3.8"
 
 click = "^8.0.3"
+numpy = "^1.21.0"
 
 
 [tool.poetry.dev-dependencies]
@@ -65,6 +64,7 @@ xdoctest = "^0.15.10"
 coverage = {version = "^6.0.1", extras = ["toml"]}
 pytest-cov = "^3.0.0"
 watchdog = {version = "^2.1.6", extras = ["watchmedo"]}
+numpy =  "^1.21.0"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
