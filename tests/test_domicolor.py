@@ -5,6 +5,7 @@ import numpy as np
 import pytest
 
 import domicolor
+from domicolor.domicolor import color_histogram
 
 
 @pytest.fixture
@@ -18,9 +19,9 @@ def test_version(version: str) -> None:
     assert version == "0.1.0"
 
 
-def test_color_histogram(version: str) -> None:
+def test_color_histogram() -> None:
     """Test color_histogram function."""
-    image = np.zeros((10, 10, 3))
-    hist = domicolor.color_histogram(image)
+    image = np.zeros((100, 100, 3))
+    hist = color_histogram(image)
     true_hist = [0, 0, 0, 0, 0, 30000, 0, 0, 0, 0]
-    assert np.alltrue(hist == true_hist)
+    assert np.all(hist == true_hist)

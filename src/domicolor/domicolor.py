@@ -2,7 +2,7 @@
 import numpy as np
 
 
-def color_histogram(image: np.array) -> np.array:
+def color_histogram(image: np.ndarray) -> np.ndarray:
     """Color histogram function.
 
     Args:
