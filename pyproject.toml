@@ -1,7 +1,7 @@
 
 [tool.poetry]
 name = "domicolor"
-version = "0.1.0"
+version = "0.1.1"
 description = "Fast dominant color extraction library"
 authors = ["Dmitriy Valetov <dmitriy.valetov@phystech.edu>"]
 
