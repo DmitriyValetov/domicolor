@@ -16,7 +16,7 @@ def version() -> Generator[str, None, None]:
 
 def test_version(version: str) -> None:
     """Sample pytest test function with the pytest fixture as an argument."""
-    assert version == "0.1.0"
+    assert version == "0.1.1"
 
 
 def test_color_histogram() -> None:
