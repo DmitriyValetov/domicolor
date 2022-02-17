@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.2] - 2022-02-17
 
+## [0.1.2] - 2022-02-17
+
 ## [0.1.1] - 2022-02-16
 
 ## [0.1.0] - 2022-02-15
@@ -16,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - First release on PyPI.
 
 [Unreleased]: https://github.com/DmitriyValetov/domicolor/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/DmitriyValetov/domicolor/compare/v0.1.2...v0.1.2
 [0.1.2]: https://github.com/DmitriyValetov/domicolor/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/DmitriyValetov/domicolor/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/DmitriyValetov/domicolor/compare/releases/tag/v0.1.0
