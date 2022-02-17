@@ -2,4 +2,4 @@
 
 __author__ = """Dmitriy Valetov"""
 __email__ = "dmitriy.valetov@phystech.edu"
-__version__ = "0.1.2"
+__version__ = "0.1.4"
