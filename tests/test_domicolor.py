@@ -14,11 +14,6 @@ def version() -> Generator[str, None, None]:
     yield domicolor.__version__
 
 
-def test_version(version: str) -> None:
-    """Sample pytest test function with the pytest fixture as an argument."""
-    assert version == "0.1.2"
-
-
 def test_color_histogram() -> None:
     """Test color_histogram function."""
     image = np.zeros((100, 100, 3))
