@@ -2,7 +2,7 @@ from PIL import Image
 import domicolor_backend
 import numpy as np
 
-import version
+from . import version
 __version__ =version.version
 
 
