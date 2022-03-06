@@ -1,10 +1,10 @@
 
-name: release
+name: demo release
 
 on:
   push:
     tags:
-      - 'v*'
+      - 'demo_v*'
 
 jobs:
   release:
@@ -13,7 +13,7 @@ jobs:
         os: [Ubuntu]
         python-version: ['3.7', '3.8', '3.9']
       fail-fast: true
-
+    
     name: ${{ matrix.os }} / ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}-latest
 
@@ -34,9 +34,11 @@ jobs:
       - name: Build package
         run: |
           poetry build -f wheel
-
-      - name: Publish package on PyPI
+      
+      - name: Publish package on TestPyPI
         uses: pypa/gh-action-pypi-publish@v1.4.2
         with:
           user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+      
